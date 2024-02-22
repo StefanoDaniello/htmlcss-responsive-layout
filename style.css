@@ -22,6 +22,7 @@ a{
 }
 img{
     width: 100%;
+    display: block;
 }
 .debug{
     border: 1px solid red;
@@ -80,6 +81,15 @@ section{
     padding: 20px;
     margin-bottom: 20px;
 }
+.card-1{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.b-card{
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
     /* section-fetures  */
 #fetures i{
     font-size: 3em;
@@ -90,7 +100,13 @@ section{
 #fetures p{
     line-height: 1.8;
 }
-
+#fetures .container>.card{
+    padding-bottom: 0;
+}
+.img-content{
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 
@@ -179,4 +195,34 @@ color: var(--color-header-bg);
   i.fa-solid.fa-bars{
     display: none;
   }
+  #fetures .container>.b-card {
+    display: flex;
+  }
+  .text-content{
+    width: 50%;
+    padding-bottom: 20px
+  }
+  .img-content{
+    width: 50%;
+    align-self: flex-end;
+   
+  }
+  .img-content img{
+    width:70%;
+  }
+  #fetures>div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card{
+    width: calc((100% / 5 - 20px) * 1.7);
+    
+  }
+  .b-card{
+    width: calc((105% / 5 - 20px) * 3.3);
+  }
+   .card-1{
+    width: calc(100% / 3 - 20px);
+  } 
 }
